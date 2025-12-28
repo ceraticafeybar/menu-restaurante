@@ -11,7 +11,7 @@
         const cacheBuster = new Date().getTime();
 
         // Construimos la URL con el parámetro para engañar al caché del móvil
-        const driveUrl = `drive.google.com/file/d/{FILE_ID}/preview?v=${cacheBuster}`;
+        const driveUrl = `https://drive.google.com/file/d/${FILE_ID}/preview?v=${cacheBuster}`;
 
         // Redirección inmediata
         window.location.replace(driveUrl);
@@ -23,3 +23,4 @@
     </p>
 </body>
 </html>
+
