@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cargando Menú...</title>
+    <script>
+        // REEMPLAZA ESTO: Pon el ID de tu archivo de Google Drive
+        const FILE_ID = "1qRVo_S8s9J544cKvxDYYkPGHmgQVlwr7";
+
+        // Generamos un número único basado en la hora actual
+        const cacheBuster = new Date().getTime();
+
+        // Construimos la URL con el parámetro para engañar al caché del móvil
+        const driveUrl = `drive.google.com/file/d/{FILE_ID}/preview?v=${cacheBuster}`;
+
+        // Redirección inmediata
+        window.location.replace(driveUrl);
+    </script>
+</head>
+<body>
+    <p style="text-align: center; font-family: sans-serif; margin-top: 50px;">
+        Cargando la última versión del menú...
+    </p>
+</body>
+</html>
