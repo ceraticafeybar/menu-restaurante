@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Cargando Menú...</title>
-    <script>
-        // REEMPLAZA ESTO: Pon el ID de tu archivo de Google Drive
-        const FILE_ID = "1qRVo_S8s9J544cKvxDYYkPGHmgQVlwr7";
+<!-- En tu index.html de GitHub Pages -->
+<script>
+  const pdfUrl = "https://drive.google.com/file/d/1qRVo_S8s9J544cKvxDYYkPGHmgQVlwr7/preview";
+  const viewerUrl = "docs.google.com" + encodeURIComponent(pdfUrl) + "&embedded=true&cb=" + new Date().getTime();
+  window.location.href = viewerUrl;
+</script>
 
-        // Generamos un número único basado en la hora actual
-        const cacheBuster = new Date().getTime();
-
-        // Construimos la URL con el parámetro para engañar al caché del móvil
-        const driveUrl = `https://drive.google.com/file/d/${FILE_ID}/preview?v=${cacheBuster}`;
-
-        // Redirección inmediata
-        window.location.replace(driveUrl);
-    </script>
 </head>
 <body>
     <p style="text-align: center; font-family: sans-serif; margin-top: 50px;">
@@ -23,4 +17,5 @@
     </p>
 </body>
 </html>
+
 
